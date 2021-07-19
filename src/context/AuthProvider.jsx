@@ -14,7 +14,7 @@ export function AuthProvider({ children }) {
   }
 
   function signUp(email, password) {
-    //
+    return firebaseAuth.createUserWithEmailAndPassword(email , password);
   }
 
   useEffect(() => {
@@ -33,7 +33,5 @@ export function AuthProvider({ children }) {
     login: login,
     signUp: signUp,
   };
-  return <AuthContext.Provider value={value}>
-           {children}
-      </AuthContext.Provider>;
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
