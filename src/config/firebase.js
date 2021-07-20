@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
-let firebaseConfig = {
-    apiKey: "AIzaSyDoXBSqEiv49GvRVN8ujHp1D6J-aZeWugE",
-    authDomain: "react-login-5c44c.firebaseapp.com",
-    projectId: "react-login-5c44c",
-    storageBucket: "react-login-5c44c.appspot.com",
-    messagingSenderId: "1003948189105",
-    appId: "1:1003948189105:web:2ebc3fa622ee41342a4990"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyCDSRUKVVhnj_uKlPLMX00a-2VVUwg5HYU",
+  authDomain: "reelsproj.firebaseapp.com",
+  projectId: "reelsproj",
+  storageBucket: "reelsproj.appspot.com",
+  messagingSenderId: "1063582511688",
+  appId: "1:1063582511688:web:9395ff770e383208ac9e7d"
+};
 
 let firebaseApp = firebase.initializeApp(firebaseConfig);
 export let firebaseAuth = firebaseApp.auth();

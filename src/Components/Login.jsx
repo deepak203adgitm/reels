@@ -16,7 +16,7 @@ const Login = (props) => {
         //   email , password
         try{
             await login(email , password);
-            props.history.push("/"); //navigate to /
+            props.history.push("/login"); //navigate to /
         }
         catch(err){
             setMessage(err.message);
