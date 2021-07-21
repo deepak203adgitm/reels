@@ -19,10 +19,14 @@ const Feeds = (props) => {
       console.log(err);
     }
   };
+
+
   const handleInputFile = (e) => {
     let file = e.target.files[0];
     setVideoFile(file);
   };
+
+  
   const handleUploadFile = async () => {
     try {
       if (videoFile.size / 1000000 > 5) {
