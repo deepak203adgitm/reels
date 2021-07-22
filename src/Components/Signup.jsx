@@ -183,6 +183,7 @@ const Signup = (props) => {
               </Button>
             </Typography>
           </Card>
+          <h2 style={{ color: "red" }}>{message}</h2>
         </Grid>
       </Grid>
     </Container>

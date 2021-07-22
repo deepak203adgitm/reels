@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
 import { firebaseDB, firebaseStorage, timeStamp } from "../config/firebase";
 import { uuid } from "uuidv4";
-// import VideoPost from "./VideoPost";
+import VideoPost from "./videoPost";
 const Feeds = (props) => {
   const { signOut } = useContext(AuthContext);
   const [videoFile, setVideoFile] = useState(null);
@@ -136,11 +136,11 @@ const Feeds = (props) => {
         </div>
         <p>{uploadVideoError}</p>
       </div>
-      {/* <div className="feeds-video-list" style={{ margin: "auto" }}>
+      <div className="feeds-video-list" style={{ margin: "auto" }}>
         {posts.map((postObj) => {
           return <VideoPost key={postObj.pid} postObj={postObj}></VideoPost>;
         })}
-      </div> */}
+      </div>
     </div>
   );
 };

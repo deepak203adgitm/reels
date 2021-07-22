@@ -67,10 +67,10 @@ const Login = (props) => {
       <Container>
         <Grid container spacing={2} style={{justifyContent:"space-around"}}>
           {/* Carousel */}
-          <Grid item sm={5}>
+          <Grid item xs={8} sm={5}>
             <Paper className={classes.carousal}>Carousel</Paper>
           </Grid>
-          <Grid item sm={3}>
+          <Grid item  xs={8} sm={5} spacing ={3} >
             <Card variant="outlined" className={classes.mb}>
               <CardMedia
                image="https://t4.ftcdn.net/jpg/03/54/98/47/360_F_354984781_y61LJvrAl1bL0c8DkisoEhtQHQFyOv2C.jpg"
@@ -116,7 +116,9 @@ const Login = (props) => {
                   </Link>
                 </Button>
               </Typography>
+           
             </Card>
+            <h2 style={{ color: "red" }}>{message}</h2>
           </Grid>
         </Grid>
       </Container>
